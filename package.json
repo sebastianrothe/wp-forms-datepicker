@@ -18,6 +18,7 @@
   "author": "Sebastian Rothe <basti@lifeinprogress.de>",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-preact-fragment": "^1.0.0",
     "eslint": "^5.13.0",
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.0",
