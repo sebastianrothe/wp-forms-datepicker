@@ -1,5 +1,5 @@
 {
-  "name": "test-datepicker",
+  "name": "gruseltour-berlin-datepicker",
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
@@ -15,19 +15,19 @@
     "dist": "microbundle --entry src/components/hello-world/index.js"
   },
   "keywords": [],
-  "author": "Zouhir <zouhir@zouhir.org>",
+  "author": "Sebastian Rothe <basti@lifeinprogress.de>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.5.0",
+    "eslint": "^5.13.0",
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.0",
-    "jest": "^21.2.1",
-    "microbundle": "^0.6.0",
+    "jest": "^24.1.0",
+    "microbundle": "^0.9.0",
     "node-sass": "^4.5.3",
     "preact-cli": "^2.0.2",
-    "preact-render-to-string": "^3.7.0",
+    "preact-render-to-string": "^4.1.0",
     "preact-widget-scripts": "^0.6.0",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^7.1.0"
   },
   "dependencies": {
     "preact": "^8.2.5",
