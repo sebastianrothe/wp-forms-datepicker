@@ -3,10 +3,6 @@
   "author": "Sebastian Rothe <basti@lifeinprogress.de>",
   "version": "0.1.0",
   "private": true,
-  "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
-  "module": "dist/index.m.js",
-  "source": "components/app/index.js",
   "dependencies": {
     "inferno": "^7.1.7",
     "inferno-compat": "^7.1.7",
@@ -16,7 +12,6 @@
   },
   "devDependencies": {
     "create-inferno-app": "^7.0.6",
-    "microbundle": "^0.9.0",
     "source-map-explorer": "^1.6.0"
   },
   "scripts": {
@@ -24,8 +19,7 @@
     "build": "inferno-scripts build",
     "test": "inferno-scripts test",
     "eject": "inferno-scripts eject",
-    "analyze": "source-map-explorer build/static/js/main.*.js",
-    "dist": "microbundle --entry src/components/app/index.js"
+    "analyze": "source-map-explorer build/static/js/main.*.js"
   },
   "eslintConfig": {
     "extends": "inferno-app"
