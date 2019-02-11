@@ -1,8 +1,0 @@
-{
-  "presets": [
-    "preact-widget-scripts/babel"
-  ],
-  "plugins": [
-    "preact-fragment"
-  ]
-}

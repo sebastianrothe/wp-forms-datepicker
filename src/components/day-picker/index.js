@@ -1,4 +1,4 @@
-import { h, Component } from "preact";
+import { Component } from "inferno";
 
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 

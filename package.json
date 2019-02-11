@@ -1,70 +1,31 @@
 {
   "name": "gruseltour-berlin-datepicker",
-  "version": "0.1.0",
-  "description": "",
-  "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
-  "module": "dist/index.m.js",
-  "source": "components/hello-world/index.js",
-  "scripts": {
-    "test": "NODE_ENV=test jest",
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --no-prerender --clean --template src/index.ejs --service-worker false",
-    "serve": "npm run build && preact serve",
-    "dev": "preact watch --template src/index.ejs",
-    "dist": "microbundle --entry src/components/hello-world/index.js"
-  },
-  "keywords": [],
   "author": "Sebastian Rothe <basti@lifeinprogress.de>",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-plugin-preact-fragment": "^1.0.0",
-    "eslint": "^5.13.0",
-    "identity-obj-proxy": "^3.0.0",
-    "if-env": "^1.0.0",
-    "jest": "^24.1.0",
-    "microbundle": "^0.9.0",
-    "node-sass": "^4.5.3",
-    "preact-cli": "^2.2.1",
-    "preact-render-to-string": "^4.1.0",
-    "preact-widget-scripts": "^0.6.0",
-    "sass-loader": "^7.1.0"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "preact": "^8.2.5",
-    "preact-compat": "^3.17.0",
-    "preact-habitat": "^3.1.0",
-    "preact-router": "^2.5.7",
+    "inferno": "^7.1.7",
+    "inferno-compat": "^7.1.7",
+    "inferno-scripts": "7.0.4",
     "react-datepicker": "^2.1.0",
     "react-day-picker": "^7.2.4"
   },
-  "jest": {
-    "verbose": true,
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "testEnvironment": "node",
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|scss|less)$": "identity-obj-proxy",
-      "^react$": "preact-compat",
-      "^react-dom$": "preact-compat"
-    },
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ]
-  }
+  "devDependencies": {
+    "create-inferno-app": "^7.0.6"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test",
+    "eject": "inferno-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "inferno-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

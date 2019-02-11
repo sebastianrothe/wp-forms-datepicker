@@ -1,4 +1,4 @@
-import { h, Component } from "preact";
+import { Component } from 'inferno';
 
 import MyDatePicker from "../datepicker";
 import MyDayPicker from "../day-picker";

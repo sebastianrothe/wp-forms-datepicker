@@ -1,13 +1,11 @@
-let poly = require("preact-cli/lib/lib/webpack/polyfills");
+import { render } from 'inferno';
 
-import { h } from "preact";
-import habitat from "preact-habitat";
+import App from './components/app';
+import * as serviceWorker from './serviceWorker';
 
-import App from "./components/app";
+render(<App />, document.getElementById('root'));
 
-let _habitat = habitat(App);
-
-_habitat.render({
-  selector: '[data-widget-host="habitat"]',
-  clean: true
-});
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();

@@ -1,12 +1,11 @@
-import { h, Component } from "preact";
+import { Component } from 'inferno';
 
-import DatePicker from "react-datepicker";
-
-import { registerLocale, setDefaultLocale } from "react-datepicker";
+import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
 import de from "date-fns/locale/de";
 
 import "react-datepicker/dist/react-datepicker.css";
-import "./style.scss";
+
+import "./style.css";
 
 export default class MyDatePicker extends Component {
   constructor (props) {
