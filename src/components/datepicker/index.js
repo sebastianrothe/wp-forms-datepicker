@@ -6,7 +6,7 @@ import {isWeekend, isFriday} from 'date-fns'
 
 import "react-datepicker/dist/react-datepicker.css";
 
-import "./style.css";
+//import "./style.css";
 
 registerLocale('de', deDe);
 setDefaultLocale('de');
