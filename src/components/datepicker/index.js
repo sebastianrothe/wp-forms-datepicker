@@ -18,6 +18,8 @@ export default class MyDatePicker extends Component {
     this.today = new Date()
     this.placeholder = "Bitte wähle ein Datum aus"
     this.dateFormat = "eee dd.MM.YYYY"
+    this.excludedDates = this.mapToDate(this.fetchExcluded())
+
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
@@ -29,6 +31,14 @@ export default class MyDatePicker extends Component {
     this.setState({
       startDate: date
     });
+  }
+
+  fetchExcluded() {
+    return ["2019.02.13"]
+  }
+
+  mapToDate(dates) {
+    return dates.map(date => new Date(date))
   }
 
   /*isGruselday(date) {
@@ -43,6 +53,7 @@ export default class MyDatePicker extends Component {
         minDate={this.today}
         dateFormat={this.dateFormat}
         placeholderText={this.placeholder}
+        excludeDates={this.excludedDates}
         showWeekNumbers
       />
     );
