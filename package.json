@@ -11,13 +11,15 @@
     "react-day-picker": "^7.2.4"
   },
   "devDependencies": {
-    "create-inferno-app": "^7.0.6"
+    "create-inferno-app": "^7.0.6",
+    "source-map-explorer": "^1.6.0"
   },
   "scripts": {
     "start": "inferno-scripts start",
     "build": "inferno-scripts build",
     "test": "inferno-scripts test",
-    "eject": "inferno-scripts eject"
+    "eject": "inferno-scripts eject",
+    "analyze": "source-map-explorer build/static/js/main.*.js"
   },
   "eslintConfig": {
     "extends": "inferno-app"
