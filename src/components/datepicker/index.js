@@ -2,7 +2,7 @@ import { Component } from 'inferno';
 
 import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
 import deDe from "date-fns/locale/de";
-import {isWeekend, isFriday} from 'date-fns'
+//import {isWeekend, isFriday} from 'date-fns'
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -31,9 +31,9 @@ export default class MyDatePicker extends Component {
     });
   }
 
-  isGruselday(date) {
+  /*isGruselday(date) {
     return isWeekend(date) || isFriday(date)
-  }
+  }*/
 
   render() {
     return (
@@ -42,7 +42,6 @@ export default class MyDatePicker extends Component {
         onChange={this.handleChange}
         minDate={this.today}
         dateFormat={this.dateFormat}
-        filterDate={this.isGruselday}
         placeholderText={this.placeholder}
         showWeekNumbers
       />
